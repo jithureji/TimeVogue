@@ -1,0 +1,57 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site2.Master.cs" Inherits="projectecom.site2" %>
+<!DOCTYPE html>
+<html lang="en">
+<head runat="server">
+    <title>Login/Register Layout</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #4A90E2 0%, #3CB371 50%, #FFFDD0 100%);
+            /* Blue → Green → Cream gradient */
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .content-wrapper {
+            background-color: #ffffff; /* White for contrast */
+            margin: 40px auto;
+            padding: 20px 30px;
+            width: 80%;
+            max-width: 900px;
+            border-radius: 20px;
+            box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+            backdrop-filter: blur(6px);
+        }
+
+        h1, h2, h3, p, label {
+            color: #2c3e50; /* Dark text for readability */
+        }
+
+        .btn {
+            background: linear-gradient(90deg, #4A90E2, #3CB371);
+            border: none;
+            color: #fff;
+            padding: 10px 18px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 14px;
+            transition: background 0.3s ease;
+        }
+
+        .btn:hover {
+            background: linear-gradient(90deg, #3CB371, #4A90E2);
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="content-wrapper">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
